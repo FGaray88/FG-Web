@@ -11,75 +11,35 @@ body {
 
 /* ---Clases en comun para todas las solapas--- */
 
+
+
 .layout {
     display: grid;
-    grid-template-rows: repeat(10, 6.8rem);
-    grid-template-columns: repeat(12, 1fr);
-} 
-
-.layout_2 {
-    display: grid;
-    grid-template-rows: repeat(13, 6.8rem);
-    grid-template-columns: repeat(12, 1fr);
-
-}
-
-
-.layout_Videos {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(17, 6.8rem);
-}
-
+    grid-template-rows: 10rem 37rem 35rem 7rem;
+    grid-template-columns: 100%;
+    margin-left: 0rem;
+    }
 
 
 header {
-    /*--item de grid layout--*/
-    grid-column: 5/span 8;
-    margin-left: 7rem;
-    margin-top: 3rem;
+    background-color: brown; 
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
     z-index: 100;
 }
 
-main {
-    /*--item de grid layout--*/
-    grid-column: 4/span 9;
-    margin-top: 3rem;
-    margin-left: 12rem;
-}
-
-
-/* ---Navegador--- */
-
 .Nav {
+    margin-top: 20px;
+    
     background-color:rgb(223, 224, 224);
     display: flex;
-    width: 35rem;
-    height: 3rem;
+    height: 4rem;
     border: 3px ridge orange;
     box-shadow: 5px 5px black;
     position: fixed;
 }
-
-.Nav__Logo {
-    width: 4rem;
-    height: 4.3rem;
-    margin-top: -1rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    border-radius: 10px;
-    border: 2px solid black;
-    box-shadow: 1px 1px black;
-    animation: pulse;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes efecto_logo {
-
-}
-
-
 
 ul {
     list-style: none;
@@ -99,7 +59,7 @@ nav ul li a {
     font-style: normal;
     color: rgb(255, 255, 255);
     background-color: rgb(247, 138, 66);
-    font-size: 22px;
+    font-size: 35px;
     padding: 3px;
     border: 2px solid black;
     box-shadow: 3px 3px black;
@@ -113,11 +73,68 @@ nav ul li a:hover {
 }
 
 
+.layout_2 {
+    display: grid;
+    grid-template-rows: 5rem 37rem 36rem 7rem;
+    grid-template-columns: 100%;
+    margin-left: 0rem;
+}
+
+.layout_Videos {
+    display: grid;
+    grid-template-rows: 5rem 35rem 80rem 7rem;
+    grid-template-columns: 100%;
+    margin-left: 0rem;
+}
+
+
+
+
+
+
+
+
+
+main {
+    /* background-color: greenyellow; */ 
+    grid-column-start: 1;
+    grid-row: 2;
+    margin-top: 0rem;
+    margin-left: 0;
+    padding-left: 26rem;
+    height: 37rem;
+}
+
+
+
+/* ---Navegador--- */
+
+
+
+
+.Nav__Logo {
+    height: 6rem;
+    margin-top: -1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 1px 1px black;
+    animation: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+
 
 /* ---Imagen principal--- */
 
 .div__imagen {
-    width: 800px;
+    
     height: 400px;
     border: 5px ridge rgb(219, 99, 29);
     box-shadow: 10px 10px black;
@@ -127,7 +144,7 @@ nav ul li a:hover {
 
 
 .Titulo {
-    width: 800px;
+    width: 47rem;
     height: 60px;
     color: rgb(250, 250, 250);
     /*background-color: black;*/
@@ -339,6 +356,8 @@ audio {
 .ItemExcepcionClass {
     width: 360px;
     height: 240px;
+    border: 5px ridge white;
+    box-shadow: 10px 10px black;
     grid-column-start: 2;
     grid-column-end: 3;
 }
@@ -463,263 +482,3 @@ form {
 
 
 /* ---Responsive--- */
-
-
-/*--Tablet--*/
-@media screen and (min-width: 321px) and (max-width: 1200px) {
-    
-    .layout {
-        grid-template-rows: 5rem 37rem 35rem 7rem;
-        grid-template-columns: 50rem 50rem;
-        row-gap: 20px;
-        margin-left: 0rem;
-    }
-
-    .layout_2 {
-        grid-template-rows: 5rem 37rem 36rem 7rem;
-        grid-template-columns: 50rem 50rem;
-        row-gap: 20px;
-        margin-left: 0rem;
-    }
-
-    .layout_Videos {
-        grid-template-rows: 5rem 35rem 80rem 7rem;
-        grid-template-columns: 50rem 50rem;
-        row-gap: 20px;
-        margin-left: 0rem;
-    }
-
-
-
-    .Nav {
-        width: 50rem;
-        height: 4rem;
-    }
-
-    .Nav__Logo {
-        width: 5.5rem;
-        height: 6rem;
-    }
-    
-    nav ul li a {
-        font-size: 35px;
-    }
-    
-    header {
-        /* background-color: brown; */
-        grid-column: 1;
-        grid-row: 1;
-        margin-left: 24rem;
-        margin-top: 1rem;
-        height: 4rem;
-    }
-    
-    main {
-        /* background-color: greenyellow; */ 
-        grid-column-start: 1;
-        grid-row: 2;
-        margin-top: 0rem;
-        margin-left: 0;
-        padding-left: 26rem;
-        height: 37rem;
-    }
-
-    .div__imagen {
-        margin-top: 2rem;
-        width: 47rem;
-    }
-
-    .Titulo {
-        width: 47rem;
-    }
-
-    .Seccion {
-        display: flex;
-        /* background-color: aqua; */
-        grid-row-start: 3;        
-        grid-column-start: 1;
-        height: 33rem;
-        margin-top: 3rem;
-        padding-bottom: 0rem;
-        row-gap: 50px;
-        justify-content: space-around;
-    }
-
-    .Seccion__video {
-        margin-left: 0rem;
-        margin-bottom: 0rem;        
-    }
-
-    .Imagen_Bio {
-        margin-left: 0;
-        margin-bottom: 3rem;
-    }
-
-    #text_bio {    
-        margin-left: 1rem;
-    }
-
-    #SeccionMusica {
-        margin-left: 1rem;
-    }
-
-
-    .VideosGrid {
-        /* background-color: aqua; */
-        grid-column-start: 1;
-        grid-row-start: 3; 
-        grid-row-end: 4;   
-        grid-template-columns: 30rem 30rem;
-        grid-template-rows: repeat(4, 1fr);
-        justify-items: center;
-        margin-top: 3rem;
-        margin-bottom: 0rem;
-        height: 77rem;
-    }
-
-    .ItemExcepcionClass {
-        grid-column: 1;
-        margin-left: 35rem;
-    }
-
-    .Footer {
-        position: fixed;
-        bottom: 0px;
-        left: 36%;
-        width: 500px;
-        height: 100px;
-    }
-
-    .Footer__Texto {
-        font-size: 25px;
-    }
-}
-
-
-/*--Mobile--*/
-@media screen and (max-width: 320px) {
-    
-    .layout {
-        grid-template-rows: 6rem 36rem 46rem 5rem;
-        grid-template-columns: 50rem;
-        row-gap: 20px;
-        margin-left: 0.3rem;
-    }
-    
-    .layout_2 {
-        grid-template-rows: 6rem 36rem 71rem 5rem;
-        grid-template-columns: 50rem;
-        row-gap: 20px;
-        margin-left: 0.3rem;
-    }
-
-    .layout_Videos {
-        grid-template-rows: 6rem 36rem 150rem 5rem;
-        grid-template-columns: 50rem;
-        row-gap: 20px;
-        margin-left: 0.3rem;
-    }
-
-    .Nav {
-        width: 46rem;
-        height: 4rem;
-    }
-
-    .Nav__Logo {
-        width: 5.5rem;
-        height: 6rem;
-    }
-    
-    nav ul li a {
-        font-size: 33px;
-    }
-    
-    header {
-        /* background-color: brown; */
-        width: 320px;
-        grid-column: 1;
-        grid-row: 1;
-        margin-left: 0rem;
-        margin-top: 1rem;
-        padding-left: 1.3rem;
-        height: 4rem;
-    }
-    main {
-        /* background-color: greenyellow; */
-        grid-column-start: 1;
-        margin-top: 0rem;
-        margin-left: 0.7rem;
-        height: 35rem;
-    }
-
-    .div__imagen {
-        margin-top: 2rem;
-        width: 47rem;
-    }
-
-    .Titulo {
-        width: 47rem;
-    }
-
-    .Seccion {
-        /* background-color: aqua; */
-        grid-row-start: 3;
-        grid-row-end: 4;
-        grid-column-start: 1;
-        display:block;
-        height: 42rem;
-        margin-top: 3rem;
-        padding-bottom: 0px;
-        padding-left: 2rem;
-        row-gap: 50px;
-    }
-
-    .Seccion__video {
-        margin-left: 10rem;
-        margin-bottom: 3rem;
-    }
-
-    .Imagen_Bio {
-        margin-left: 25%;
-        margin-bottom: 3rem;
-    }
-
-    #text_bio {    
-        margin-left: 1rem;
-    }
-
-    #SeccionMusica {
-        margin-left: 1rem;
-    }
-
-    .VideosGrid {
-        /* background-color: aqua; */
-        grid-column-start: 1;
-        grid-row-start: 3;     
-        grid-template-columns: 50rem;
-        grid-template-rows: repeat(7, 1fr);
-        justify-items: center;
-        margin-top: 3rem;
-        margin-bottom: 5rem;
-    }
-
-    .ItemClass {
-    grid-column: 1;
-    }
-
-    .ItemExcepcionClass {
-    grid-column: 1;
-    }
-
-    .Footer {
-        position: fixed;
-        bottom: 0px;
-        left: 24%;
-        width: 450px;
-        height: 80px;
-    }
-
-    .Footer__Texto {
-        font-size: 22px;
-    }
-}
