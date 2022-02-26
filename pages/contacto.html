@@ -11,7 +11,7 @@
 </head>
 
     <body>
-        <div class="layout_2">
+        <div class="layout">
             <header>
                 <nav class="Nav">
                     <img src="../images/LogoFG.jpg" alt="LogoFG" class="Nav__Logo">
@@ -24,76 +24,88 @@
                     </ul>
                 </nav>
             </header>
-
-            <main>
-                <img src="../images/mic.JPG" alt="Foto7" class="div__imagen animate__animated animate__flipInX">
-                <h1 class="Titulo">FABIAN GARAY - CONTACTO</h1>
-            </main>
         
+            <main>
+                <div class="div_imagen1">
+                    <img src="../images/mic.JPG" alt="Foto7" class="imagen animate__animated animate__flipInX">
+                </div>
+                <div class="div_h1">
+                    <h1 class="Titulo">FABIAN GARAY - CONTACTO</h1>
+                </div>
+            </main>
 
     
 
 
-        <div class="Seccion">
-            <div>
-                <img src="../images/hojasguitar.jpg" alt="Bio" class="Imagen_Bio animate__animated animate__flipInY">
-            </div>
-            
-            <form class="Seccion__Descripcion animate__animated animate__zoomIn" id="text_contact">
-                <div class="form_nombre">
-                    <label for="fnombre">Nombre y apellido</label>
-                    <input type="text" id="fnombre" required>
-                </div>
-                <div class="form_mail">
-                    <label for="femail">Dirección de correo</label>
-                    <input type="email" id="femail" required>
-                </div>
-
-                <div class="form_redes">
-                    <label for="fredes" id="idred">Cual es tu red social favorita?
-                    <select name="Redes">
-                        <option>Instragram</option>
-                        <option>Facebook</option>
-                        <option>TikTok</option>
-                        <option>Otros</option>
-                    </select>
-                </div>
-
-                <div class="form_plataformas">
-                    <label for="fplataformas" id="idplat">Cual es tu plataforma favorita para escuchar música?
-                    <select name="Plataforma">
-                        <option>Youtube</option>
-                        <option>Spotify</option>
-                        <option>Deezer</option>
-                        <option>Apple Music</option>
-                        <option>Google Play</option>
-                        <option>Otros</option>
-                    </select>
+            <section>
+                <div class="section_div">
+                    <img src="../images/hojasguitar.jpg" alt="Bio" class="Imagen_Bio animate__animated animate__flipInY">
                 </div>
                 
-                <div class="form_textarea">
-                    <textarea name="Comentarios" id="fcomments""" cols=86" rows="10" placeholder="Hay algo que quieras comentarme?"></textarea>
-                </div>
+                <div class="section_div">
+                    <form class="Seccion__Descripcion animate__animated animate__zoomIn" id="text_contact">
+                        <div class="form_nombre">
+                            <label for="fnombre">Nombre y apellido</label>
+                            <input type="text" id="fnombre" required>
+                        </div>
+                        <div class="form_mail">
+                            <label for="femail">Dirección de correo</label>
+                            <input type="email" id="femail" required>
+                        </div>
 
-                <div class="form_susc">
-                    <label for="susc">Te gustaría suscribirte y recibir informacion adicional sobre el proyecto?</label>
+                        <div class="form_redes">
+                            <label for="fredes" id="idred">Cual es tu red social favorita?
+                            <select name="Redes">
+                                <option>Instragram</option>
+                                <option>Facebook</option>
+                                <option>TikTok</option>
+                                <option>Otros</option>
+                            </select>
+                        </div>
+
+                        <div class="form_plataformas">
+                            <label for="fplataformas" id="idplat">Cual es tu plataforma favorita para escuchar música?
+                            <select name="Plataforma">
+                                <option>Youtube</option>
+                                <option>Spotify</option>
+                                <option>Deezer</option>
+                                <option>Apple Music</option>
+                                <option>Google Play</option>
+                                <option>Otros</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form_textarea">
+                            <textarea name="Comentarios" id="fcomments""" cols=32" rows="10" placeholder="Hay algo que quieras comentarme?"></textarea>
+                        </div>
+
+                        <div class="form_susc">
+                            <label for="susc">Te gustaría suscribirte y recibir informacion adicional sobre el proyecto?</label>
+                        </div>
+                        <div class="form_sino">
+                            <label for="fsi">Si</label>
+                            <input type="radio" id="fbuttonsi" name="fsino">
+                            <label for="fno">No</label>    
+                            <input type="radio" id="fbuttonno" name="fsino">
+                        </div>
+                        <div class="form_enviar">
+                            <input type="submit" id="fbutton_enviar" value="Enviar">
+                        </div>
+                    </form>
                 </div>
-                <div class="form_sino">
-                    <label for="fsi">Si</label>
-                    <input type="radio" id="fbuttonsi" name="fsino">
-                    <label for="fno">No</label>    
-                    <input type="radio" id="fbuttonno" name="fsino">
+            </section>
+
+            <footer>
+                <div class="Footer">
+                    <div>
+                        <img src="../images/Logos_plat.png" alt="LogosPlat" class="Footer__logos">
+                    </div>
+                    <div>
+                        <h6 class="Footer__Texto">© Todos los derechos reservados 2022.</h6>
+                    </div>
                 </div>
-                <div class="form_enviar">
-                    <input type="submit" id="fbutton_enviar" value="Enviar">
-                </div>
-            </form>
+            </footer>
+
         </div>
-
-        <footer class="Footer">
-            <img src="../images/Logos_plat.png" alt="Logo FB" class="Footer__logos">
-            <h6 class="Footer__Texto">© Todos los derechos reservados 2022.</h6>
-        </footer>
-
     </body>
 </html>
