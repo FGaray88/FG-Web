@@ -5,44 +5,72 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fabian Garay | Inicio</title>
-        <link rel="stylesheet" href="./styles/style.css">
+        <link href="./css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="icon" type="imagen/x-icon" href="./images/LogoFG.jpg">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="./styles/style.css">
     </head>
 
     <body>
-        <div class="layout">
-            <header>
-                <nav class="Nav animate__animated animate__backInLeft">
-                    <img src="./images/LogoFG.jpg" alt="LogoFG" class="Nav__Logo" >
-                    <ul>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./pages/bio.html">Bio</a></li>
-                        <li><a href="./pages/musica.html">Musica</a></li>
-                        <li><a href="./pages/videos.html">Videos</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
+
+<!--         <div class="container-fluid colorfondo">
+            <div class="container colorfondo2">
+                <h1>Hola</h1>
+                <p>Texto de prueba</p>
+
+            </div>   
+        </div>
+-->
+
+
+        <div class="container mt-3">
+            <header class="row">
+                <div class="col-md-6 nav">
+                    <div class="nav_div_imagen col-md-1">
+                        <img src="./images/LogoFG.jpg" alt="LogoFG" class="Nav__Logo">
+                    </div>
+                    <nav class="col-md-10">
+                        <ul>
+                            <li><a href="./index.html">Inicio</a></li>
+                            <li><a href="./pages/bio.html">Bio</a></li>
+                            <li><a href="./pages/musica.html">Musica</a></li>
+                            <li><a href="./pages/videos.html">Videos</a></li>
+                            <li><a href="./pages/contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
 
-            <main>
-                <div class="animate__animated animate__rotateInDownRight div_imagen1">
-                    <img src="./images/portada.jpg" alt="Portada" class="imagen">
+            <main class="row mt-4">
+                <div id="carouselExampleSlidesOnly" class="carousel slide div_imagen1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/portada.jpg" class="d-block w-100 imagen" alt="portada">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="./images/vivo1.jpg" class="d-block w-100 imagen" alt="portada">
+                        </div>
+                    </div>
                 </div>
+
                 <div class="animate__animated animate__zoomInRight div_h1">
                     <h1 class="Titulo">FABIAN GARAY WEB OFICIAL</h1>
                 </div>
             </main>
 
-            <section class="animate__animated animate__rotateInUpLeft">
-                <div class="section_div">
-                    <iframe class="Seccion__video" src="https://www.youtube.com/embed/qD1KmI35-DY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+            
 
+            <section class="row animate__animated animate__rotateInUpLeft">
                 <div class="section_div">
-                    <p class="Seccion__Descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed elementum velit, et tempus leo. Sed ultrices ornare libero blandit ultrices. Proin blandit pulvinar eros, nec tincidunt justo tempus tempus. In eget suscipit ipsum. Mauris consectetur sollicitudin ligula ut ultricies. Donec lacinia quis metus at condimentum. Donec massa diam, convallis at libero non, vulputate ultricies sem.</p>
+                    <div class="div_videoindex">
+                        <iframe class="Seccion__video" src="https://www.youtube.com/embed/qD1KmI35-DY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="div_p">
+                        <p class="Seccion__Descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed elementum velit, et tempus leo. Sed ultrices ornare libero blandit ultrices. Proin blandit pulvinar eros, nec tincidunt justo tempus tempus. In eget suscipit ipsum. Mauris consectetur sollicitudin ligula ut ultricies. Donec lacinia quis metus at condimentum. Donec massa diam, convallis at libero non, vulputate ultricies sem.</p>
+                    </div>
                 </div>
             </section>
+
 
             <footer>
                 <div class="Footer">
@@ -54,6 +82,9 @@
                     </div>
                 </div>
             </footer>
-        </div>
+        </div>       
+        
+        <script src="./js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
     </body>
 </html>

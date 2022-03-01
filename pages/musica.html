@@ -5,66 +5,81 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Fabian Garay | Musica</title>
-        <link rel="stylesheet" href="../styles/style.css">
-        <link rel="icon" type="imagen/x-icon" href="../images/LogoFG.jpg">
+        <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="icon" type="imagen/x-icon" href="./images/LogoFG.jpg">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="../styles/style.css">
     </head>
 
     <body>
-        <div class="layout">
-            <header>
-                <nav class="Nav">
-                    <img src="../images/LogoFG.jpg" alt="LogoFG" class="Nav__Logo">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./bio.html">Bio</a></li>
-                        <li><a href="./musica.html">Musica</a></li>
-                        <li><a href="./videos.html">Videos</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
+        <div class="container mt-3">
+            <header class="row">
+                <div class="col-md-6 nav">
+                    <div class="nav_div_imagen col-md-1">
+                        <img src="../images/LogoFG.jpg" alt="LogoFG" class="Nav__Logo">
+                    </div>
+                    <nav class="col-md-10">
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="./bio.html">Bio</a></li>
+                            <li><a href="./musica.html">Musica</a></li>
+                            <li><a href="./videos.html">Videos</a></li>
+                            <li><a href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </header>
 
-            <main>
-                <div class="div_imagen1">
-                    <img src="../images/rocas.JPG" alt="Foto4" class="imagen animate__animated animate__flipInX">
+
+            <main class="row mt-4">
+                <div id="carouselExampleSlidesOnly" class="carousel slide div_imagen1" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../images/rocas.JPG" class="d-block w-100 imagen" alt="portada">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="../images/portada.jpg" class="d-block w-100 imagen" alt="portada">
+                        </div>
+                    </div>
                 </div>
-                <div class="div_h1">
+
+                <div class="animate__animated animate__zoomInRight div_h1">
                     <h1 class="Titulo">FABIAN GARAY - MUSICA</h1>
                 </div>
             </main>
 
 
-            <section>
+            <section class="row animate__animated animate__rotateInUpLeft">
                 <div class="section_div">
-                    <img src="..//images/artistic1.JPG" alt="Music" class="Imagen_Bio animate__animated animate__flipInY">
-                </div>
-                
-                <div class="section_div">
-                    <div class="Seccion__Descripcion animate__animated animate__zoomIn" id="SeccionMusica">
-                        <div class="Musica__Div">
-                            <p class="Musica__Titulos">Editados</p>
-                            <iframe class="Musica__IframesSpoty" src="https://open.spotify.com/embed/track/2jEIoKRILa56eZ5cRMnn1k?utm_source=generator"  frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                            <iframe class="Musica__IframesSpoty" src="https://open.spotify.com/embed/track/7uqqZRO3eRr5T92ZZy7mv5?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                            <iframe class="Musica__IframesSpoty" src="https://open.spotify.com/embed/album/61WztUA4CqUcFhr96WZ5yq?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                        </div>
-                        <div class="Musica__Div">
-                            <p class="Musica__Titulos">Versiones</p>
-                            <iframe class="Musica__IframesSoundcloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1155142945&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fabian-garay1" title="Fabián Garay" target="_blank" style="color: #cccccc; text-decoration: none;"></a> · <a href="https://soundcloud.com/fabian-garay1/god-only-knows-beach-boys-cover" title="God Only Knows (Beach Boys Cover)" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
-
-                            <iframe class="Musica__IframesSoundcloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1006974937&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fabian-garay1" title="Fabián Garay" target="_blank" style="color: #cccccc; text-decoration: none;"></a> · <a href="https://soundcloud.com/fabian-garay1/fabian-garay-adela-en-el-carrousel-charly-garcia" title="Fabian Garay - Adela En El Carrousel (Charly Garcia)" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
-                            <iframe class="Musica__IframesSoundcloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319114664&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fabian-garay1" title="Fabián Garay" target="_blank" style="color: #cccccc; text-decoration: none;"></a> · <a href="https://soundcloud.com/fabian-garay1/fabian-garay-jealous-guy" title="Fabian Garay - Jealous Guy" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
-                        </div>
-                        <div class="Musica_Div">
-                            <p class="Musica__Titulos">Outtakes</p>
-                            <p class="Musica__Outtakes">"From Her Soul (Demo)"</p>
-                            <audio src="../music/From her soul take 2.wav" controls></audio>
-                            <p class="Musica__Outtakes">"Ramon, el ángel de la espada de hierro (Demo)"</p>
-                            <audio src="../music/ramon prepro.wav" controls></audio>            
-                        </div>
+                    <div class="div_imagensecc">
+                        <img src="../images/artistic1.JPG" alt="Bio" class="Imagen_Bio animate__animated animate__flipInY">
+                    </div>
+                    <div class="div_p">
+                        <div class="Seccion__Descripcion animate__animated animate__zoomIn" id="SeccionMusica">
+                            <div class="Musica__Div">
+                                <p class="Musica__Titulos">Editados</p>
+                                <iframe class="Musica__IframesSpoty" src="https://open.spotify.com/embed/track/2jEIoKRILa56eZ5cRMnn1k?utm_source=generator"  frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                                <iframe class="Musica__IframesSpoty" src="https://open.spotify.com/embed/track/7uqqZRO3eRr5T92ZZy7mv5?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                                <iframe class="Musica__IframesSpoty" src="https://open.spotify.com/embed/album/61WztUA4CqUcFhr96WZ5yq?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                            </div>
+                            <div class="Musica__Div">
+                                <p class="Musica__Titulos">Versiones</p>
+                                <iframe class="Musica__IframesSoundcloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1155142945&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fabian-garay1" title="Fabián Garay" target="_blank" style="color: #cccccc; text-decoration: none;"></a> · <a href="https://soundcloud.com/fabian-garay1/god-only-knows-beach-boys-cover" title="God Only Knows (Beach Boys Cover)" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
+                                <iframe class="Musica__IframesSoundcloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1006974937&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fabian-garay1" title="Fabián Garay" target="_blank" style="color: #cccccc; text-decoration: none;"></a> · <a href="https://soundcloud.com/fabian-garay1/fabian-garay-adela-en-el-carrousel-charly-garcia" title="Fabian Garay - Adela En El Carrousel (Charly Garcia)" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
+                                <iframe class="Musica__IframesSoundcloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/319114664&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/fabian-garay1" title="Fabián Garay" target="_blank" style="color: #cccccc; text-decoration: none;"></a> · <a href="https://soundcloud.com/fabian-garay1/fabian-garay-jealous-guy" title="Fabian Garay - Jealous Guy" target="_blank" style="color: #cccccc; text-decoration: none;"></a></div>
+                            </div>
+                            <div class="Musica_Div">
+                                <p class="Musica__Titulos">Outtakes</p>
+                                <p class="Musica__Outtakes">"From Her Soul (Demo)"</p>
+                                <audio src="../music/From her soul take 2.wav" controls></audio>
+                                <p class="Musica__Outtakes">"Ramon, el ángel de la espada de hierro (Demo)"</p>
+                                <audio src="../music/ramon prepro.wav" controls></audio>            
+                            </div>
+                        </div>    
                     </div>
                 </div>
             </section>
+
 
             <footer>
                 <div class="Footer">
@@ -76,6 +91,8 @@
                     </div>
                 </div>
             </footer>
-        </div>
+        </div>       
+        
+        <script src="../js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
