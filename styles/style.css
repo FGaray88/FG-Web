@@ -8,10 +8,17 @@
 
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(107, 103, 87);
+    /* background-color: black; */
+    
 }
 
 /* ---Clases en comun para todas los html--- */
+
+
+.bordes {
+    border-left: 5px ridge rgb(190, 96, 7);
+    border-right: 5px ridge rgb(190, 96, 7);
+}
 
 
 header {
@@ -495,6 +502,13 @@ footer {
 
 
 /* ---Responsive--- */
+
+@media screen and (max-width: 767px) {
+
+    .div_lateral {
+        display: none;
+    }
+}
 
 
 @media screen and (min-width: 768px) and (max-width: 1024px)

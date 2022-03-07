@@ -6,131 +6,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabian Garay | Contacto</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="icon" type="imagen/x-icon" href="./images/LogoFG.jpg">
+    <link rel="icon" type="imagen/x-icon" href="../images/LogoFG.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
     <body>
-        <div class="container mt-3">
-            <header class="row">
-                <div class="col-md-6 nav">
-                    <div class="nav_div_imagen col-md-1">
-                        <img src="../images/LogoFG.jpg" alt="LogoFG" class="Nav__Logo">
-                    </div>
-                    <nav class="col-md-10">
-                        <ul>
-                            <li><a href="../index.html">Inicio</a></li>
-                            <li><a href="./bio.html">Bio</a></li>
-                            <li><a href="./musica.html">Musica</a></li>
-                            <li><a href="./videos.html">Videos</a></li>
-                            <li><a href="./contacto.html">Contacto</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-
-            <main class="row mt-4">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../images/mic.JPG" class="d-block w-100 imagen" alt="auris">
+        <div class="container-fluid bg-black">
+            <div class="bordes container pt-3 col-md-8 bg-dark bg-gradient vh-100">
+                <header class="row animate__animated animate__bounceInRight">
+                    <div class="col-md-6 nav">
+                        <div class="nav_div_imagen col-md-1">
+                            <img src="../images/LogoFG.jpg" alt="LogoFG" class="Nav__Logo">
                         </div>
-                        <div class="carousel-item active">
-                            <img src="../images/portada.jpg" class="d-block w-100 imagen" alt="auris">
+                        <nav class="col-md-10">
+                            <ul>
+                                <li><a href="../index.html">Inicio</a></li>
+                                <li><a href="./bio.html">Bio</a></li>
+                                <li><a href="./musica.html">Musica</a></li>
+                                <li><a href="./videos.html">Videos</a></li>
+                                <li><a href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+
+                <main class="row mt-4 animate__animated animate__bounceInLeft">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="../images/mic.JPG" class="d-block w-100 imagen" alt="auris">
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="../images/portada.jpg" class="d-block w-100 imagen" alt="auris">
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="../images/cascada.JPG" class="d-block w-100 imagen" alt="auris">
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="../images/vivo1.jpg" class="d-block w-100 imagen" alt="auris">
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="../images/rocas.JPG" class="d-block w-100 imagen" alt="auris">
+                            </div>
                         </div>
-                        <div class="carousel-item active">
-                            <img src="../images/cascada.JPG" class="d-block w-100 imagen" alt="auris">
+                    </div>
+
+                    <div class="animate__animated animate__zoomInRight div_h1">
+                        <h1 class="Titulo">FABIAN GARAY - CONTACTO</h1>
+                    </div>
+                </main>
+
+
+                <section class="row animate__animated animate__rotateInUpLeft">
+                    <div class="section_div">
+                        <div class="div_imagensecc">
+                            <img src="../images/hojasguitar.JPG" alt="Bio" class="Imagen_Bio animate__animated animate__flipInY">
                         </div>
-                        <div class="carousel-item active">
-                            <img src="../images/vivo1.jpg" class="d-block w-100 imagen" alt="auris">
+                        <div class="div_p">                        
+                            <form class="Seccion__Descripcion animate__animated animate__zoomIn" id="text_contact">
+                                <div class="form_nombre">
+                                    <label for="fnombre">Nombre y apellido</label>
+                                    <input type="text" id="fnombre" required>
+                                </div>
+                                <div class="form_mail">
+                                    <label for="femail">Dirección de correo</label>
+                                    <input type="email" id="femail" required>
+                                </div>
+        
+                                <div class="form_redes">
+                                    <label for="fredes" id="idred">Cual es tu red social favorita?
+                                    <select name="Redes">
+                                        <option>Instragram</option>
+                                        <option>Facebook</option>
+                                        <option>TikTok</option>
+                                        <option>Otros</option>
+                                    </select>
+                                </div>
+        
+                                <div class="form_plataformas">
+                                    <label for="fplataformas" id="idplat">Cual es tu plataforma favorita para escuchar música?
+                                    <select name="Plataforma">
+                                        <option>Youtube</option>
+                                        <option>Spotify</option>
+                                        <option>Deezer</option>
+                                        <option>Apple Music</option>
+                                        <option>Google Play</option>
+                                        <option>Otros</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form_textarea">
+                                    <textarea name="Comentarios" id="fcomments" rows="10" placeholder="Hay algo que quieras comentarme?"></textarea>
+                                </div>
+        
+                                <div class="form_susc">
+                                    <label for="susc">Te gustaría suscribirte y recibir informacion adicional sobre el proyecto?</label>
+                                </div>
+                                <div class="form_sino">
+                                    <label for="fsi">Si</label>
+                                    <input type="radio" id="fbuttonsi" name="fsino">
+                                    <label for="fno">No</label>    
+                                    <input type="radio" id="fbuttonno" name="fsino">
+                                </div>
+                                <div class="form_enviar">
+                                    <input type="submit" id="fbutton_enviar" value="Enviar">
+                                </div>
+                            </form>
                         </div>
-                        <div class="carousel-item active">
-                            <img src="../images/rocas.JPG" class="d-block w-100 imagen" alt="auris">
+                    </div>
+                </section>
+
+
+
+                
+
+                <footer>
+                    <div class="Footer">
+                        <div>
+                            <img src="../images/Logos_plat.png" alt="LogosPlat" class="Footer__logos">
+                        </div>
+                        <div>
+                            <h6 class="Footer__Texto">© Todos los derechos reservados 2022.</h6>
                         </div>
                     </div>
-                </div>
+                </footer>
+            </div>       
+        </div>
 
-                <div class="animate__animated animate__zoomInRight div_h1">
-                    <h1 class="Titulo">FABIAN GARAY - CONTACTO</h1>
-                </div>
-            </main>
-
-
-            <section class="row animate__animated animate__rotateInUpLeft">
-                <div class="section_div">
-                    <div class="div_imagensecc">
-                        <img src="../images/hojasguitar.JPG" alt="Bio" class="Imagen_Bio animate__animated animate__flipInY">
-                    </div>
-                    <div class="div_p">                        
-                        <form class="Seccion__Descripcion animate__animated animate__zoomIn" id="text_contact">
-                            <div class="form_nombre">
-                                <label for="fnombre">Nombre y apellido</label>
-                                <input type="text" id="fnombre" required>
-                            </div>
-                            <div class="form_mail">
-                                <label for="femail">Dirección de correo</label>
-                                <input type="email" id="femail" required>
-                            </div>
-    
-                            <div class="form_redes">
-                                <label for="fredes" id="idred">Cual es tu red social favorita?
-                                <select name="Redes">
-                                    <option>Instragram</option>
-                                    <option>Facebook</option>
-                                    <option>TikTok</option>
-                                    <option>Otros</option>
-                                </select>
-                            </div>
-    
-                            <div class="form_plataformas">
-                                <label for="fplataformas" id="idplat">Cual es tu plataforma favorita para escuchar música?
-                                <select name="Plataforma">
-                                    <option>Youtube</option>
-                                    <option>Spotify</option>
-                                    <option>Deezer</option>
-                                    <option>Apple Music</option>
-                                    <option>Google Play</option>
-                                    <option>Otros</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form_textarea">
-                                <textarea name="Comentarios" id="fcomments" rows="10" placeholder="Hay algo que quieras comentarme?"></textarea>
-                            </div>
-    
-                            <div class="form_susc">
-                                <label for="susc">Te gustaría suscribirte y recibir informacion adicional sobre el proyecto?</label>
-                            </div>
-                            <div class="form_sino">
-                                <label for="fsi">Si</label>
-                                <input type="radio" id="fbuttonsi" name="fsino">
-                                <label for="fno">No</label>    
-                                <input type="radio" id="fbuttonno" name="fsino">
-                            </div>
-                            <div class="form_enviar">
-                                <input type="submit" id="fbutton_enviar" value="Enviar">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
-
-
-
-            
-
-            <footer>
-                <div class="Footer">
-                    <div>
-                        <img src="../images/Logos_plat.png" alt="LogosPlat" class="Footer__logos">
-                    </div>
-                    <div>
-                        <h6 class="Footer__Texto">© Todos los derechos reservados 2022.</h6>
-                    </div>
-                </div>
-            </footer>
-        </div>       
         
         <script src="../js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
