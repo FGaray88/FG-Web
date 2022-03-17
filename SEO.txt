@@ -1,0 +1,5 @@
+
+
+1.- Cada html tiene su propio titulo con el nombre principal, el nombre de la seccion y logo incluido (link icon).
+2.- en <meta> con el nombre description utilicé solo en el index palabras relacionadas y descriptivas del producto en general (en este caso difusion artistica).
+3.- tambien en <meta> con el nombre keywords inclui palabras relacionadas con el contenido puntual de la pagina, aunque no dejan de ser similares.

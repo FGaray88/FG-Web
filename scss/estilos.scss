@@ -5,6 +5,8 @@
 
 /*--@extend en lineas 302, 310, 313, 331, 332 de SCSS--*/
 
+$colorborde1: rgb(190, 96, 7);
+
 @import "fuentes";
 
 /* @mixin en lineas 495, 516 de SCSS */
@@ -23,20 +25,17 @@ $bordercolors:(spoty: 2px solid rgb(7, 224, 72),soundcloud: 2px solid rgb(7, 137
 
 
 
-
-
-
 /* ---Clases en comun para todas los html--- */
 
 
 .bordes {
-    border-left: 5px ridge rgb(190, 96, 7);
-    border-right: 5px ridge rgb(190, 96, 7);
+    border-left: 5px ridge;
+    border-right: 5px ridge;
+    border-color: $colorborde1;
 }
 
 
 header {
-    /*background-color: brown;*/
     display: flex;
     justify-content: center;
     height: 55px;
@@ -53,7 +52,6 @@ header {
 }
 
 ul {
-    /*background-color: aqua;*/
     height: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -124,7 +122,6 @@ nav {
 /* ---Imagen principal--- */
 
 main {
-    /* background-color: greenyellow; */
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
@@ -145,7 +142,8 @@ main {
     margin-bottom: 20px;
     max-width: 800px;
     max-height: 400px;
-    border: 5px ridge rgb(219, 99, 29);
+    border: 5px ridge;
+    border-color: $colorborde1;
     box-shadow: 10px 10px black;
 }
 
@@ -169,7 +167,7 @@ main {
 
 
 
-    
+
 
 @keyframes efecto_titulo {
     0% {
@@ -339,7 +337,6 @@ audio {
 /* ---Videos--- */
 
 section {
-    /* background-color:blue; */
     margin-bottom: 30px;
 }
 
@@ -477,6 +474,7 @@ textarea {
 
 
 
+
 .Footer {
     background-color: rgb(100, 100, 100);
     margin: 0;
@@ -609,8 +607,5 @@ textarea {
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
-            /* display: flex;
-            justify-content: space-evenly;
-            align-items: center; */
         }
     }
