@@ -104,7 +104,7 @@ nav {
 
 .nav2 {
     display: none;
-    width: 20rem;
+    width: 10rem;
     div button {
         color: rgb(255, 255, 255);
         background-color: rgb(247, 138, 66);
@@ -569,6 +569,14 @@ textarea {
     }
 
 }
+
+@media screen and (min-width: 768px)
+    {
+.nav2 {
+    margin: auto;
+    }
+}
+
 
 
 

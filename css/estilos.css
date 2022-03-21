@@ -109,7 +109,7 @@ nav {
 
 .nav2 {
   display: none;
-  width: 20rem; }
+  width: 10rem; }
   .nav2 div button {
     color: white;
     background-color: #f78a42;
@@ -418,6 +418,10 @@ textarea {
     display: none; }
   .nav2 {
     display: block; } }
+
+@media screen and (min-width: 768px) {
+  .nav2 {
+    margin: auto; } }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   nav ul li a {
