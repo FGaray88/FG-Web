@@ -39,21 +39,15 @@ header {
     display: flex;
     justify-content: center;
     height: 55px;
+    position: relative;
+    z-index: 100;
 }
-
-
-
-
 /* ---Navegador--- */
-
-
-
 .nav_div_imagen {
     height: 80px;
     margin-top: -15px;
 }
-
-ul {
+.nav1 {
     height: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -65,7 +59,7 @@ ul {
         a {
             color: rgb(255, 255, 255);
             background-color: rgb(247, 138, 66);
-            padding-right: 5px;
+            padding: 2px;
             border: 2px solid black;
             box-shadow: 3px 3px black;
             border-top-right-radius: 20px;
@@ -77,9 +71,6 @@ ul {
         }
     }   
 }
-
-
-
 .nav {
     width: 95%;
     max-width: 700px;
@@ -91,20 +82,16 @@ ul {
     align-content: center;
     border: 3px ridge orange;
     box-shadow: 5px 5px black;
-    position: fixed;
-    z-index: 100;
 }
-
 nav {
     height: 100%;
     align-items: center;
+
 }
-
-
 
 .nav2 {
     display: none;
-    width: 10rem;
+    width: 14rem;
     div button {
         color: rgb(255, 255, 255);
         background-color: rgb(247, 138, 66);
@@ -116,9 +103,8 @@ nav {
         line-height: 0;
         text-align: center;
     }
-    
     div ul {
-        width: 100%;
+        width: 100%;        
         li a {
             &:hover {
                 background-color: rgb(255, 255, 255);
